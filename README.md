@@ -57,7 +57,7 @@ Portfolio\_Web/
 
 ## 📷 Preview
 
-> *(Screenshots are optional — add here if needed using Markdown or paste image links)*
+> *Screenshot.png*
 
 ---
 
