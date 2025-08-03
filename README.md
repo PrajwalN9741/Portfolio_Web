@@ -57,7 +57,7 @@ Portfolio\_Web/
 
 ## 📷 Preview
 
-> *Screenshot.png*
+![Screenshot of my Portfolio_website](./screenshot.png)
 
 ---
 
