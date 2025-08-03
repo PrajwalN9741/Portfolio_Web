@@ -85,5 +85,3 @@ This portfolio is open-source and available for personal use and learning.
 
 > Built with 💙 by Prajwal N — Powered by Bootstrap & Passion for Code.
 ```
-
----
