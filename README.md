@@ -56,9 +56,8 @@ Portfolio\_Web/
 
 ## 📷 Preview
 
-![Screenshot of my Portfolio Website](./screenshot.png)
+![Screenshot of my Portfolio Website](./Screenshot.png)
 
-> *(Make sure `screenshot.png` is placed in your repository root or update the path accordingly.)*
 
 ---
 
