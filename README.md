@@ -1,5 +1,4 @@
 
-
 <h1 align="center">🌐 Prajwal N — Portfolio Website</h1>
 
 <p align="center">
@@ -12,20 +11,20 @@
 
 ## 📌 Overview
 
-This is my personal **portfolio website** to showcase who I am, what I’ve built, and how you can connect with me. It's a simple, elegant, and fully responsive site made using **HTML**, **CSS**, **JavaScript**, and **Bootstrap 5**.
+This is my personal **portfolio website** built to showcase who I am, what I’ve created, and how you can connect with me. It is simple, elegant, and fully responsive — made using **HTML**, **CSS**, **JavaScript**, and **Bootstrap 5**.
 
 ---
 
 ## 🚀 Website Features
 
 - 💡 **Animated Hero Section** with professional intro
-- 👨‍💻 **About Me** section with image and background
-- 💼 **Projects** gallery with GitHub links
-- 🛠️ **Skills & Tools** categorized by domain
-- 🎓 **Education** timeline with CGPA/percentages
-- 🧾 **Certificate** showcase with view links
-- 📬 **Contact** form (via Web3Forms) + social icons
-- 📱 100% **Responsive Design**
+- 👨‍💻 **About Me** section with image and short biography
+- 💼 **Projects** gallery with GitHub repository links
+- 🛠️ **Skills & Tools** categorized by technology stack
+- 🎓 **Education** timeline with CGPA and achievements
+- 📜 **Certificates** display with preview links
+- 📬 **Contact Form** via Web3Forms + social links
+- 📱 Fully **Responsive Design** for all devices
 
 ---
 
@@ -39,7 +38,7 @@ Portfolio\_Web/
 ├── skills.html        # Programming, Tools, Certificates
 ├── education.html     # Academic info
 ├── contact.html       # Contact form + social media
-├── img/               # All static images
+├── img/               # Static images (profile, project, certificate)
 
 ```
 
@@ -47,33 +46,35 @@ Portfolio\_Web/
 
 ## 🛠️ Tech Stack
 
-| Frontend   | Tools       | Backend/API   |
-|------------|-------------|---------------|
-| HTML5      | Bootstrap 5 | Web3Forms     |
-| CSS3       | FontAwesome | —             |
-| JavaScript | GitHub Pages | —            |
+| Frontend   | Tools         | Backend/API |
+|------------|---------------|-------------|
+| HTML5      | Bootstrap 5   | Web3Forms   |
+| CSS3       | FontAwesome   | —           |
+| JavaScript | GitHub Pages  | —           |
 
 ---
 
 ## 📷 Preview
 
-![Screenshot of my Portfolio_website](./screenshot.png)
+![Screenshot of my Portfolio Website](./screenshot.png)
+
+> *(Make sure `screenshot.png` is placed in your repository root or update the path accordingly.)*
 
 ---
 
 ## 🙋‍♂️ About Me
 
 **Prajwal N**  
-🎓 Final year BCA student from **National Degree College, Bagepalli**  
-💡 Passionate about programming, design, and tech innovation  
-📌 Currently exploring full-stack development and AI tools  
+🎓 Final year BCA student at **National Degree College, Bagepalli**  
+💡 Enthusiastic about programming, UI/UX, and software development  
+🚀 Exploring full-stack web apps, Python tools, and AI assistants  
 
 ---
 
 ## 📫 Contact Me
 
 - 📧 Email: [prajwalrajn9@gmail.com](mailto:prajwalrajn9@gmail.com)
-- 🐙 GitHub: [PrajwalN9741](https://github.com/PrajwalN9741)
+- 🐙 GitHub: [@PrajwalN9741](https://github.com/PrajwalN9741)
 - 🔗 LinkedIn: [Prajwal N](https://www.linkedin.com/in/prajwal-n9741)
 - 📸 Instagram: [@_._ite_me_prajju.__](https://www.instagram.com/_._ite_me_prajju.__)
 
@@ -81,6 +82,6 @@ Portfolio\_Web/
 
 ## 📄 License
 
-This portfolio is open-source and available for personal use and learning.
+This portfolio is open-source and available for personal learning and inspiration.
 
-> Built with 💙 by Prajwal N — Powered by Bootstrap & Passion for Code.
+> 💙 Built with Bootstrap, passion, and code by **Prajwal N**
