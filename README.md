@@ -2,8 +2,6 @@ Great! Since your portfolio is live at:
 
 🔗 **[https://prajwaln9741.github.io/Portfolio\_Web/](https://prajwaln9741.github.io/Portfolio_Web/)**
 
-Here's an updated `README.md` tailored for your GitHub repository:
-
 ---
 
 ```markdown
