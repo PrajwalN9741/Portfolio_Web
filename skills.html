@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Skills - Prajwal N</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #87CEEB 0%, #6a11cb 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+
+    nav.navbar {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-header {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+      .section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  padding-left: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      color: #000;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .icon-style {
+      font-size: 3rem;
+      margin: 20px 0 10px 0;
+      max-height: 50px;
+      color: inherit;
+    }
+
+    .card-body img {
+      display: block;
+      margin: 20px auto 10px auto;
+      max-height: 50px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto;
+      backdrop-filter: blur(8px);
+      border-radius: 0 0 15px 15px;
+    }
+
+    .nav-link.active {
+      color: #ffd700 !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Prajwal N</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="skills.html">Courses & Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-header">My Skills</header>
+
+<section class="container my-5">
+  <h2 class="section-heading">Frontend
+  </h2>
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="fab fa-html5 icon-style text-danger" title="HTML" aria-label="HTML"></i>
+          <h5 class="card-title mt-2">HTML</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="fab fa-css3-alt icon-style text-info" title="CSS" aria-label="CSS"></i>
+          <h5 class="card-title mt-2">CSS</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="fab fa-js-square icon-style text-warning" title="JavaScript" aria-label="JavaScript"></i>
+          <h5 class="card-title mt-2">JavaScript</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="section-heading">Languages</h2>
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="fab fa-python icon-style text-secondary" title="Python" aria-label="Python"></i>
+          <h5 class="card-title mt-2">Python</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="fab fa-java icon-style text-primary" title="Java" aria-label="Java"></i>
+          <h5 class="card-title mt-2">Java</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo" title="C++" aria-label="C++" />
+          <h5 class="card-title mt-2">C++</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Logo" title="C" aria-label="C" />
+          <h5 class="card-title mt-2">C</h5>
+        </div>
+      </div>
+    </div>
+     <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# Logo" title="C#" aria-label="C#" />
+          <h5 class="card-title mt-2">C#</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="section-heading">Frameworks/Libraries & Tools</h2>
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+   
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET Logo" title=".NET Framework" aria-label=".NET" />
+          <h5 class="card-title mt-2">.NET Framework</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <i class="fas fa-window-maximize icon-style text-info" title="Tkinter" aria-label="Tkinter"></i>
+      <h5 class="card-title mt-2">Tkinter</h5>
+    </div>
+  </div>
+</div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy Logo" title="NumPy" class="icon-style" />
+        <h5 class="card-title mt-2">NumPy</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas Logo" title="Pandas" class="icon-style" />
+        <h5 class="card-title mt-2">Pandas</h5>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+  <section class="container my-5">
+  <h2 class="section-heading">Database</h2>
+  <div class="row row-cols-2 row-cols-md-4 g-4">
+    <div class="cal">
+       <div class="card h-100">
+        <div class="card-body">
+          <i class="fas fa-database icon-style text-primary" title="DBMS" aria-label="DBMS"></i>
+          <h5 class="card-title mt-2">DBMS</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+  <div class="card h-100">
+    <div class="card-body">
+      <i class="fas fa-database icon-style text-success" title="SQLite3" aria-label="SQLite3"></i>
+      <h5 class="card-title mt-2">SQLite3</h5>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+  <header class="hero-header">My Certificates</header>
+
+<section class="container my-5">
+  <h2 class="section-heading">Certificates</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-3">Machine Learning in Python</h5>
+          <img src="img/Machine_Learning.png" alt="Machine Learning Certificate" class="img-fluid rounded shadow-sm mb-3" style="max-height: 250px;" />
+          <p class="card-text">
+            Issued by: IBM via CognitiveClass.ai<br>
+            Date: July 2025
+          </p>
+          <a href="https://courses.cognitiveclass.ai/certificates/1f424af1950f4934b7ebeb3d9e87038c" 
+             class="btn btn-outline-primary mt-2" 
+             target="_blank">
+             View Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center text-white py-3" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(8px); border-radius: 0 0 15px 15px;">
+  <div class="container">
+    <p class="mb-0">
+      &copy; <span id="year"></span> <strong>Prajwal N</strong> | Made with 💙 and HTML CSS & JS.
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
+</body>
+</html>

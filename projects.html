@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Projects - Prajwal N</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    /* Background gradient */
+    body {
+      background: linear-gradient(135deg, #87CEEB 0%, #6a11cb 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+
+    /* Transparent navbar with blur */
+    nav.navbar {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      backdrop-filter: blur(8px);
+    }
+
+    /* Page header styling */
+    .hero-header {
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Cards with translucent white background */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      color: #000; /* text inside cards black */
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Project image styling */
+    .project-logo {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto;
+      backdrop-filter: blur(8px);
+      border-radius: 0 0 15px 15px;
+    }
+
+    a.btn-primary {
+      background-color: #6a11cb;
+      border-color: #6a11cb;
+      transition: background-color 0.3s ease;
+    }
+    a.btn-primary:hover {
+      background-color: #87CEEB;
+      border-color: #87CEEB;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Prajwal N</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Courses & Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero-header">
+  My Projects
+</header>
+
+<section class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/logo_clg.png" class="project-logo" alt="College Website Logo" />
+        <div class="card-body">
+          <h5 class="card-title">College Website</h5>
+          <p class="card-text">A responsive college website designed with HTML, CSS, JavaScript, and Bootstrap, showcasing college info and services.</p>
+        </div>
+        <div class="card-footer bg-transparent border-0">
+          <a href="https://github.com/PrajwalN9741/College-Website" class="btn btn-primary" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!-- Add more projects here if needed -->
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Prajwal N | Designed with Bootstrap 5
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
