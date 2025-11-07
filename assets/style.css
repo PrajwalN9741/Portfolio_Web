@@ -1,0 +1,339 @@
+/* 🌈 Theme Variables */
+:root {
+  --gradient-start: #87CEEB;
+  --gradient-end: #6a11cb;
+  --dark: #041530;
+  --light-bg: rgba(255, 255, 255, 0.95);
+}
+
+/* 🧭 General Page Setup */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🌟 Navbar */
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px);
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #ffd700 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #00e6ff !important;
+}
+
+/* 💫 Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero h1 span {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  color: #000;
+  height: 1.2em;
+  position: relative;
+}
+
+.hero h1 span span {
+  display: block;
+  animation: changeText 10s infinite;
+}
+
+@keyframes changeText {
+  0% { transform: translateY(0%); }
+  25% { transform: translateY(-100%); }
+  50% { transform: translateY(-200%); }
+  75% { transform: translateY(-300%); }
+  100% { transform: translateY(0%); }
+}
+
+.btn-custom {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #87CEEB;
+  color: #000;
+}
+
+/* 🪄 Hero Header (Used in all subpages) */
+.hero-header {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 2rem;
+}
+
+/* ✨ Section Headings */
+.section-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* 📦 Card Styles */
+.card {
+  background: var(--light-bg);
+  border-radius: 15px;
+  color: #000;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.icon-style {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.card-body img {
+  display: block;
+  margin: 20px auto;
+  max-height: 50px;
+}
+
+/* 📚 About Section */
+.about-section {
+  padding: 60px 15px;
+}
+
+/* 🎓 Education Section */
+section.container {
+  background: var(--light-bg);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  color: #000;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.edu-item strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.edu-details {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 📞 Contact Section */
+.contact-form {
+  background: var(--light-bg);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+  background: rgba(106, 17, 203, 0.85);
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.contact-info i {
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* 🦶 Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  border-radius: 0 0 15px 15px;
+  backdrop-filter: blur(8px);
+  font-size: 0.95rem;
+}
+
+/* 🤖 AI Chat Styles */
+#prajwal-ai-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: var(--dark);
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+#prajwal-ai-btn:hover {
+  transform: scale(1.1);
+}
+
+#prajwal-ai-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 360px;
+  max-height: 70vh;
+  display: none;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(135,206,250,0.98), rgba(255,255,255,0.98));
+  color: var(--dark);
+  border-radius: 14px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.05);
+  z-index: 10000;
+}
+
+#prajwal-ai-chat header {
+  padding: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+}
+
+#prajwal-ai-messages {
+  padding: 12px;
+  overflow-y: auto;
+  flex: 1;
+  font-size: 14px;
+}
+
+.pmsg {
+  margin-bottom: 10px;
+  max-width: 82%;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.pmsg.user {
+  background: rgba(5,32,74,0.08);
+  margin-left: 18%;
+  float: right;
+  color: var(--dark);
+}
+
+.pmsg.bot {
+  background: rgba(255,255,255,0.9);
+  margin-right: 18%;
+  float: left;
+  color: var(--dark);
+  box-shadow: 0 2px 6px rgba(4,21,55,0.04);
+}
+
+#prajwal-ai-input {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  background: rgba(255,255,255,0.6);
+}
+
+#prajwal-ai-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+  outline: none;
+}
+
+#prajwal-ai-input button {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+#prajwal-ai-note {
+  font-size: 12px;
+  color: rgba(5,32,74,0.7);
+  padding: 8px;
+  text-align: center;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-header {
+    font-size: 2rem;
+  }
+
+  #prajwal-ai-chat {
+    width: 90%;
+    right: 5%;
+  }
+}
