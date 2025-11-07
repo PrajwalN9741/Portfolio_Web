@@ -5,69 +5,36 @@ const sendBtn = document.getElementById("prajwal-ai-send");
 const input = document.getElementById("prajwal-ai-text");
 const messages = document.getElementById("prajwal-ai-messages");
 
-// Toggle chat
-btn && (btn.onclick = () => {
-  chatBox.style.display = "flex";
-  chatBox.setAttribute("aria-hidden", "false");
-});
-closeBtn && (closeBtn.onclick = () => {
-  chatBox.style.display = "none";
-  chatBox.setAttribute("aria-hidden", "true");
-});
+btn.onclick = () => (chatBox.style.display = "flex");
+closeBtn.onclick = () => (chatBox.style.display = "none");
 
-// helper to add messages
+sendBtn.onclick = async () => {
+  const text = input.value.trim();
+  if (!text) return;
+  addMessage(text, "user");
+  input.value = "";
+
+  addMessage("Thinking...", "bot");
+
+  try {
+    const res = await fetch("https://new-h9xhd0ind-prajwaln9741s-projects.vercel.app/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text }),
+    });
+
+    const data = await res.json();
+    messages.lastElementChild.textContent = data.reply || "⚠️ No reply from AI.";
+  } catch (err) {
+    console.error(err);
+    messages.lastElementChild.textContent = "⚠️ AI unavailable right now.";
+  }
+};
+
 function addMessage(text, sender) {
   const msg = document.createElement("div");
   msg.className = `pmsg ${sender}`;
   msg.textContent = text;
   messages.appendChild(msg);
   messages.scrollTop = messages.scrollHeight;
-  return msg;
-}
-
-// send handler
-sendBtn && (sendBtn.onclick = sendMessage);
-
-// Enter key support
-input && input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    e.preventDefault();
-    sendMessage();
-  }
-});
-
-let pendingBotMsg = null;
-
-async function sendMessage() {
-  const text = input.value.trim();
-  if (!text) return;
-  addMessage(text, "user");
-  input.value = "";
-
-  // add a "thinking" placeholder
-  pendingBotMsg = addMessage("Thinking...", "bot");
-
-  try {
-    // By default use relative path; replace with your deployed URL if needed.
-    const res = await fetch("/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text }),
-    });
-
-    if (!res.ok) {
-      const errText = await res.text();
-      pendingBotMsg.textContent = "⚠️ AI error: " + (errText || res.statusText);
-      pendingBotMsg = null;
-      return;
-    }
-
-    const data = await res.json();
-    pendingBotMsg.textContent = data.reply || "⚠️ No reply from AI.";
-    pendingBotMsg = null;
-  } catch (err) {
-    if (pendingBotMsg) pendingBotMsg.textContent = "⚠️ AI unavailable now.";
-    pendingBotMsg = null;
-    console.error("Chat error:", err);
-  }
 }
